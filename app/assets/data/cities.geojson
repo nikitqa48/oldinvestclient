@@ -1,0 +1,668 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Москва"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.617778,
+          55.751667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Рязань"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.7705078125,
+          54.648412502316695
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Калуга"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.25488281249999,
+          54.55932258743861
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Смоленск"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.0361328125,
+          54.826007999094955
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Воронеж"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.19921875,
+          51.65892664880053
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Брянск"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.365234375,
+          53.291489065300226
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Курск"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.23291015625,
+          51.80861475198521
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Белгород"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.58447265625,
+          50.65294336725709
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Киев"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.520019531249996,
+          50.51342652633956
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Волгоград"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.47265625,
+          48.748945343432936
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Самара"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.185546875,
+          53.330872983017066
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Казань"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.130859375,
+          55.825973254619015
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Нижний Новгород"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.9892578125,
+          56.36525013685606
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Санкт-Петербург"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.322265625000004,
+          59.966009702748345
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Великий Новгород"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.289062500000004,
+          58.57398108438837
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Псков"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.3447265625,
+          57.833054912910875
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Великие Луки"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.531005859375,
+          56.35916436114856
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Саратов"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.0107421875,
+          51.6180165487737
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Пенза"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.0439453125,
+          53.26521293124656
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Тамбов"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.46240234375,
+          52.75624323962823
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Саранск"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.17578125,
+          54.23955053156177
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Киров"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.72412109375,
+          58.63121664342478
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Уфа"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.9423828125,
+          54.78801734817893
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Екатеринбург"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          60.62255859375,
+          56.8609857506449
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Курган"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          65.36865234375,
+          55.49130362820423
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Челябинск"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          61.41357421874999,
+          55.229023057406344
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Вологда"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.8583984375,
+          59.24341475839977
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Тверь"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.92529296875,
+          56.8609857506449
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Ярославль"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.92431640625,
+          57.69240553526455
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Иваново"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.0009765625,
+          57.06463027327855
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Астрахань"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.0322265625,
+          46.37725420510028
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Краснодар"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.97949218749999,
+          45.089035564831015
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Ставрополь"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.9677734375,
+          45.07352060670971
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Пермь"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          56.2939453125,
+          58.07787626787517
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Минск"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.59765625,
+          53.94315470224928
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Вильнюс"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.29052734375,
+          54.70558168515836
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Калининград"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.478515625,
+          54.7373075686575
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Рига"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.093017578125,
+          56.97492429075949
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Хельсинки"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.960937499999996,
+          60.20707506634915
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Стокгольм"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0615234375,
+          59.355596110016315
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Варшава"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.005859375,
+          52.24125614966341
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Архангельск"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.517578125,
+          64.60503753178526
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Петрозаводск"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.365234375,
+          61.87687021463305
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Мурманск"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.0029296875,
+          68.97416358340674
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Баку"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.81201171875,
+          40.413496049701955
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Астана"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          71.4111328125,
+          51.23440735163461
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Омск"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.4326171875,
+          55.00282580979323
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Новосибирск"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.0126953125,
+          55.10351605801967
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Грозный"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.703125,
+          43.32517767999296
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Берлин"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.38134765625,
+          52.52958999943304
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Прага"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.414062499999998,
+          50.099440987634985
+        ]
+      }
+    }
+  ]
+}

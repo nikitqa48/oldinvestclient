@@ -1,0 +1,6 @@
+ul.marker-content-list
+  for item in items
+    .marker-content-list-item-wrapper
+      li.marker-content-list-item(data-url=routeFor("items", item))
+        .marker-content-list-item-name=item.name()
+        .marker-content-list-item-link

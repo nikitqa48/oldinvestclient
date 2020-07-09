@@ -1,0 +1,65 @@
+@import 'nib'
+
+$headerHeight = 7.8em
+$footerHeight = 5.5em
+
+#site
+  position: absolute
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  font-family: "Helvetica Neue"
+  font-weight: 400
+  color: #444
+  overflow: hidden
+
+  #main-menu-container
+    z-index: 2
+
+  #header-container
+    z-index: 3
+    position: absolute
+    top: 0
+    right: 0
+    left: 0
+    display block
+
+  #range-filter-container
+    z-index: 1
+    padding: 1em
+    position: absolute
+    background-color: #eb4411
+
+  #map-container
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    z-index: 1
+
+  #footer-container
+    height: 31px
+    z-index: 2
+    position: absolute
+    right: 5px
+    bottom: 5px
+    display block
+
+  #items-list-container
+    left: 0
+    width: 0
+    position: absolute
+    top: 71px
+    bottom: 5px
+
+  &.blur
+    #map-container
+      -webkit-filter: blur(6px)
+  &.blur-out
+    #map-container
+      -webkit-animation: blurOut 0.5s forwards
+  &.blur-in
+    #map-container
+      -webkit-animation: blurIn 0.5s forwards

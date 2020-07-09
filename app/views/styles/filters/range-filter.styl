@@ -1,0 +1,75 @@
+@import "nib"
+
+.range-filter
+  padding-bottom: 5.2em
+  position: relative
+
+  .filter-title-container
+    text-align: left
+    text-transform: none
+
+  .slider
+    height: 1px
+    margin-top: 20px
+    position: relative
+    border-left: 1.3em solid #8a8a8a
+    border-right: 1em solid #8a8a8a
+    background-color: #8a8a8a
+
+  .range
+    position: absolute
+    top: 0
+    bottom: 0
+    background: #e88265
+
+  .separators
+    position: absolute
+    top: 0
+    bottom: 0
+    left: -1.3em
+    right: -1.3em
+    z-index: 1
+
+  .slider-handle
+    position: absolute
+    top: -11px
+    z-index: 2
+
+    &.left, &.right
+      height: 23px
+      width: 23px
+      border-radius: 1.3em
+      background: url("../images/slider-dots.png") #f9f9f9 top no-repeat
+      box-shadow: 0px 0 3px rgba(0, 0, 0, 0.5)
+      cursor: pointer
+
+      .wrap
+        top: 100%
+        line-height: 1.6em
+        padding-top: 0.2em
+        text-align: center
+        margin-top: .8em
+        left: -15px
+        right: -15px
+        position: absolute
+        .slider-value
+          background: #444444
+          font-size: 12px
+          color: #fff
+          display inline-block
+          min-width 17px
+          padding 0 3px
+      &:active
+        background-color: #f1623a
+        background-position: bottom
+        box-shadow: none
+
+        .slider-value
+          background: #f1623a
+
+    &.left
+      margin-left: -13px
+
+    &.right
+      right: 0
+      margin-left: -13px

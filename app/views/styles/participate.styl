@@ -1,0 +1,138 @@
+@import 'nib'
+
+.right-button-group
+  .participate-btn
+    padding: 0 1.2em
+    display: inline-block
+    color: #FFF
+    line-height: 2.9em
+    cursor: pointer
+    margin-right: 5px
+    background rgba(0,166,81, 0.7)
+    >.title
+      font-family: "Helvetica Neue"
+      font-weight 400
+      font-size: 12px
+      display: inline-block
+      padding-top: 2px
+      text-transform uppercase
+    &:active
+      background: rgba(0,166,81, 0.9)
+#participate
+  #modal-popup
+    margin-top -225px
+#send-message
+  #modal-popup
+    margin-top -150px
+
+#participate, #send-message
+  .modal-overlay
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background: #000
+    z-index: 3
+    opacity: 0
+    transition: opacity 0.1s ease
+  &.opened
+    #modal-popup
+      top: 50%
+    .modal-overlay
+      opacity: 0.3
+  &.dispose
+    #modal-popup
+      opacity: 0
+    .modal-overlay
+      opacity: 0
+  #modal-popup
+    z-index: 4
+    position: absolute
+    top: -39em
+    background: #FFF
+    left: 50%
+    margin-left: -18em
+    width: 36em
+    transition: top 0.2s ease, opacity 0.1s ease
+    .close-btn
+      position: absolute
+      top: 0
+      right: -5.2em
+      width: 52px
+      height: 55px
+      cursor: pointer
+      background: url("../images/close-card.png") center no-repeat #f07c59
+    .wrap
+      padding: 0 3em 2.4em
+      .success
+        background: #fff
+        color: #f07c59
+        font-size: 20px
+        font-family: "Helvetica Neue"
+        font-weight 400
+        text-align: center
+        text-transform: uppercase
+        margin: 0 -30px -24px -30px
+        padding: 50px 30px
+
+    .modal-title
+      font-size: 1.8em
+      text-align: center
+      font-weight: bold
+      color: #F07C59
+      text-transform: uppercase
+      margin-top: 1.9em
+    .modal-description
+      text-align: center
+      font-size: 14px
+      margin-top: 30px
+      line-height: 1.3em
+    .modal-form
+      margin-top: 2.4em
+      .success
+        font-size: 14px
+        text-align: center
+      .control-group
+        padding: 1.4em 3em 1.4em 2.6em
+        margin: 0 -30px
+        border-left: 4px solid #fff
+        input, textarea
+          width: 100%
+          line-height: 35px
+          height 35px
+          padding: 0
+          margin: 0
+          border: 1px solid #d4d4d4
+          box-sizing: border-box
+          padding-left: 11px
+          color: #444
+        &.focus
+          background: #f6f6f6
+          border-left: 4px solid #00a651
+        &.error
+          background: #f8e4dc
+          border-left: 4px solid #dc4100
+      .action
+        margin-top: 24px
+        text-align: center
+        outline none !important
+        .send-btn
+          color: #F07C59
+          text-align: center
+          display: inline-block
+          padding: 0 30px
+          line-height: 35px
+          font-size: 12px
+          text-transform: uppercase
+          cursor: pointer
+          background: #fff
+          border: 1px solid #F07C59
+          height 35px
+          &:active
+            background: #F07C59
+            border: 1px solid #F07C59
+            color: #fff
+
+
+

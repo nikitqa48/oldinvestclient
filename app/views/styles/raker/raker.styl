@@ -1,0 +1,40 @@
+.raker
+  max-height 100%
+  display none
+  background-color #fff
+  position absolute
+  top 0
+  bottom 1em
+  // for iscroll
+  overflow hidden
+  padding 0 2.9em 0 1.3em
+  border 1px solid #D2D2D2
+  width: 217px
+  /*height 100%*/
+
+  &.opened
+    display block
+
+    > .scroll-container
+      max-height 100%
+      .iScrollVerticalScrollbar
+        top 4px !important
+        bottom 4px !important
+        right 4px !important
+
+  .title-block
+    > .title
+      font-size 1.4em
+      padding-bottom 1em
+      border-bottom 1px solid #dddddd
+      color #444444
+      font-weight bold
+      text-transform uppercase
+      .icon
+        background url(../images/raker-logo.png) center no-repeat
+        width 1.7em
+        height 1.6em
+        float right
+        margin-top -0.3em
+        margin-left 0.3em
+        display inline-block

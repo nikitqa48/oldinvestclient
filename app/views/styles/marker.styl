@@ -1,0 +1,248 @@
+@import 'nib'
+
+#site
+  .bubble
+    &:hover
+      z-index 10001 !important
+
+#site
+  .bubble
+    &:active, &.active
+      z-index 10001 !important
+
+.bubble
+  border-radius: 20px
+  transition: transform 0.2s ease-out, opacity 0.2s ease-in
+
+  &:active, &.active, &:hover:not(&.infrastructure-marker), &.opened
+    .outer-circle
+      width 130%
+      height 130%
+      margin-top -15%
+      margin-left -15%
+      border-radius 29px
+      border: none
+      background: url("../images/marker-bg.png") rgba(0, 0, 0, 0) no-repeat center
+    .inner-circle
+      background-color: #fff;
+      background-image: url("../images/platforms-active.svg")
+      background-size 25px
+    &.platform-marker
+      .outer-circle
+        animation: spin 1s linear 0 infinite none
+      .inner-circle
+        background-color: #fff;
+        background-image: url("../images/platforms-active.svg")
+        background-size 25px
+    &.project-marker
+      .outer-circle
+        animation: spin 1s linear 0 infinite none
+      .inner-circle
+        background-color: #fff;
+        background-image: url("../images/project-active.svg")
+    &.idea-marker
+      .outer-circle
+        animation: spin 1s linear 0 infinite none
+      .inner-circle
+        background-color: #fff;
+        background-image: url("../images/idea-active.svg")
+
+  &.opened
+    z-index: 10000 !important
+  .outer-circle
+    width: 100%
+    height: 100%
+    margin-top: 0
+    margin-left: 0
+    border: 1px solid #FFF
+    border-radius: 21px
+    background: #FFF
+    transition: all 0.1s linear
+    box-sizing: border-box
+
+  .inner-circle
+    width: 90%
+    height: 90%
+    margin: auto
+    position: absolute
+    top: 5%
+    left: 5%
+    border-radius: 22px
+    background-color: #cd4f29
+    background-position: center
+    background-repeat: no-repeat
+
+  .count
+    line-height: 22px
+    text-align: center
+    border-radius: 12px
+    background-color: #FFF
+    position: absolute
+    top: -7px
+    right: -7px
+    font-size: 12px
+    color: #000
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3)
+    padding: 0 7px
+    min-width: 8px
+
+  /*ABOUT Z-INDEX
+  platform, idea, project - 50
+  special-economic-zone - 48
+  municipality - 45
+  city - 40
+  company - 35
+  natiral-resource - 25
+  */
+
+
+  &.platform-marker
+    z-index: 50 !important
+    .inner-circle
+      background-image: url(../images/platforms.svg)
+      background-size: 2.5em
+      background-position center
+
+  &.project-marker
+    z-index: 50 !important
+    .inner-circle
+      background-image: url(../images/project.svg)
+      background-size: 3.5em
+      background-position: -2px 0px
+
+  &.city-marker
+    z-index 40 !important
+    .inner-circle
+      background-image: url(../images/city-marker.png)
+
+  &.idea-marker
+    z-index: 50 !important
+    .inner-circle
+      background-size: 3.5em
+      background-image: url(../images/idea.svg)
+
+  &.municipality-marker
+    z-index: 45 !important
+    .inner-circle
+      background-size: 2.5em
+      background-image: url(../images/municipality.svg)
+
+  &.special-economic-zone-marker
+    z-index: 47 !important
+    .inner-circle
+      background-image: url(../images/special-economic-zone.svg)
+
+  &.natural-resource-marker
+    z-index: 25 !important
+    min-height 30px
+    .inner-circle
+      text-align center
+      padding: 0 3px
+      min-width: 30px
+      background-color: rgba(0,0,0,0.4)
+    .uniq2
+      width 45px
+    .uniq3
+      width 76px
+    .uniq4
+      width 90px
+    .uniqmore
+      width: 75px
+      background: url(../images/designation-icon/designation-etc.png) rgba(0,0,0,0.4) no-repeat 73px 1px
+      padding-right: 16px
+    .icon
+      padding: 3px
+      height: 24px
+      display: inline-block
+      img
+        max-height: 24px
+
+  &.cultural-heritage-marker
+    .inner-circle
+      background-size: 3.5em
+      background-image: url(../images/cultural-heritage.svg)
+
+  &.industrial-park-marker
+    .inner-circle
+      background-image: url(../images/industrial-park.svg)
+
+  &.territorial-development-area-marker
+    .inner-circle
+      background-image: url(../images/territorial-development-area.svg)
+
+.bubble
+  &.secondary-marker
+    .outer-circle
+      width: 100%
+      height: 100%
+      border: 1px solid #fff
+      margin-top: 0
+      margin-left: 0
+      box-sizing: border-box
+    .inner-circle
+      background-color: #3a888a
+      width: 90%
+      height: 90%
+      top: 5%
+      left: 5%
+    .count
+      top: -10px
+      right: -12px
+    &.city-marker
+      .outer-circle
+        border none !important
+        background-color transparent !important
+      .inner-circle
+        background-size 30px
+        background-color transparent !important
+        background-image: url(../images/city-marker.png)
+    &.company-marker
+      z-index: 35 !important
+      .inner-circle
+        background-image: url(../images/company.svg)
+        background-size: 2em
+
+    &:hover
+      .outer-circle
+        border 1px solid #fff
+        background #fff
+      .inner-circle
+        background-color #116C6F
+
+    &:active, &.active, &.opened
+      .outer-circle
+        background #fff
+      .inner-circle
+        background-color #4CB5B8
+
+  &.development-plan-marker
+    &:hover
+      .inner-circle
+        background-color: #942525
+    &:active, &.active, &.opened
+      .inner-circle
+        background-color: #942525
+    .inner-circle
+      background-image: url("../images/legal.png")
+      background-color: #B63F3F
+      background-size 16px
+  &.p-o-i-marker
+    margin-left: -12px
+    margin-top: -12px
+    width: 24px
+    height: 24px
+    z-index: 9
+
+    .inner-circle
+      background rgba(72, 65, 193, 0.78)
+      width: 30px
+      height: 30px
+      top: 0
+      left: 0
+      border-radius: 15px
+
+    img
+      width: 24px
+      border-radius: 15px
+      border: 3px solid white
+      box-shadow: 0 0 8px rgba(0,0,0,0.75)

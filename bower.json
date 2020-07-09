@@ -1,0 +1,75 @@
+{
+  "name": "kamchatka-client",
+  "version": "0.1.0",
+  "main": "public/javascripts/app.js",
+  "dependencies": {
+    "chaplin": "~0.10.0",
+    "console-polyfill": "~0.1.0",
+    "underscore": "~1.5.1",
+    "underscore.string": "~2.3.3",
+    "iscroll": "~5.1.1",
+    "jquery.browser": "~0.0.3",
+    "modernizr": "~2.6.2",
+    "reset-css": "~2.0.20110126",
+    "leaflet": "~0.7.3",
+    "Leaflet.label": "~0.2.1",
+    "leaflet.markercluster": "~0.4.0",
+    "jquery.cookie": "~1.3.1",
+    "jquery": "1.10.2"
+  },
+  "overrides": {
+    "modernizr": {
+      "dependencies": {
+        "jquery": "*"
+      },
+      "main": "./modernizr.js"
+    },
+    "backbone": {
+      "dependencies": {
+        "jquery": "*",
+        "underscore": "*"
+      },
+      "main": "backbone.js"
+    },
+    "underscore": {
+      "main": "underscore.js"
+    },
+    "iscroll": {
+      "main": "build/iscroll.js"
+    },
+    "leaflet": {
+      "main": [
+        "dist/leaflet.css",
+        "dist/leaflet-src.js"
+      ]
+    },
+    "Leaflet.label": {
+      "dependencies": {
+        "leaflet": "*"
+      },
+      "main": [
+        "dist/leaflet.label.css",
+        "dist/leaflet.label-src.js"
+      ]
+    },
+    "leaflet.markercluster": {
+      "dependencies": {
+        "leaflet": "*"
+      },
+      "main": [
+        "dist/MarkerCluster.Default.css",
+        "dist/MarkerCluster.css",
+        "dist/leaflet.markercluster-src.js"
+      ]
+    },
+    "underscore.string": {
+      "main": "dist/underscore.string.min.js"
+    },
+    "leaflet.markerclusterer": {
+      "dependencies": {
+        "leaflet": "*"
+      },
+      "main": "dist/leaflet.markercluster-src.js"
+    }
+  }
+}

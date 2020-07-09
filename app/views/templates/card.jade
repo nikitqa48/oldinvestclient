@@ -1,0 +1,32 @@
+.card-wrap
+  != renderPartial(locals)
+.close-card
+  img(src="../images/close-card.png")
+.actions
+
+  .left-group
+
+    - if (config.sharing) {
+
+    -   if (config.sharing.vkontakte)
+          a.share-button.no-patch(href="#", action="vkontakte", title=t("share.vkontakte"))
+
+    -   if (config.sharing.facebook)
+          a.share-button.no-patch(href="#", action="facebook", title=t("share.facebook"))
+
+    -   if (config.sharing.twitter)
+          a.share-button.no-patch(href="#", action="twitter", title=t("share.twitter"))
+    - }
+
+  .right-group
+
+    - if (config.print)
+        a.share-button.print-button.no-patch(href="#", action="print", title=t("buttons.print"))
+
+    - if (config.pdf)
+      - if (config.pdfModels.indexOf(model.className()) != -1)
+        a.share-button.pdf-button.no-patch(href="#", action="pdf", title=t("buttons.pdf"))
+
+    .btn.send-email
+      span=t("buttons.send_email")
+      i.icon.mail

@@ -1,0 +1,7 @@
+a(href=urlFor("items",model))
+  .title= model.get("name")
+  .infrastructure
+    each obj,k  in infra_objects
+      if obj
+        .icon(class=k)
+  .link= t("buttons.read_more")

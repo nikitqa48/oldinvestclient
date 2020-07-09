@@ -1,0 +1,6 @@
+defaultConfig = require "config/default-config"
+module.exports = _.extend defaultConfig,
+  dataUrl:
+    en: "http://mapadmin.invest-lipetsk.ru/export?l=en"
+    ru: "http://mapadmin.invest-lipetsk.ru/export?l=ru"
+  imageHost: "http://map.invest-lipetsk"

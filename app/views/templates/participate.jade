@@ -1,0 +1,17 @@
+.modal-overlay
+#modal-popup
+  .close-btn
+  .wrap
+    .modal-title= t("participate.header")
+    .modal-description= t("participate.content")
+    form.modal-form(action="/request", method="GET")
+      .control-group
+        input(type="text",placeholder=t("participate.email"),class="required email",name="email",id="emailInput")
+      .control-group
+        input(type="text",placeholder=t("participate.full_name"),class="required",name="fullName",id="fullNameInput")
+      .control-group
+        input(type="text",placeholder=t("participate.organization"),name="organization",id="organizationInput")
+      .control-group
+        textarea(placeholder=t("participate.request"), name="request", id="requestInput")
+      .action
+        button.send-btn.submit(type="submit")= t("messages.mail.submit")

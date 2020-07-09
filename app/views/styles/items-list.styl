@@ -1,0 +1,144 @@
+@import 'nib'
+
+
+#items-list
+  position: absolute
+  z-index: 3
+  top: 0
+  left: 0
+  bottom: 0
+  width: 0
+  display: none
+  &.raker-hide-list
+    display none !important
+  &.raker-search
+    bottom: 54px
+    width: 261px
+    background: #FFF
+    top: 0px
+    left: 4px
+    .counter
+      left: 28.3em
+    .scroll-container
+      left: 0
+      bottom: 0
+      height: 100%
+  &.raker-development_plans
+    bottom: 54px
+    top: 120px
+    .scroll-container
+      // left: 4px
+  .counter
+    position: absolute
+    top: 1em
+    left: 21.2em
+    width: 3em
+    text-align: center
+    background: #8b8b8b
+    color: #fff
+    line-height: 2.2em
+    .count
+      font-size: 1.2em
+      font-family: "Ubuntu"
+      font-weight: 400
+  .scroll-container
+    max-height: 100%
+    width: 219px
+    overflow: hidden
+    left: 272px
+    position: relative
+    background: #fff
+    padding: 0 2.9em 0 1.3em
+    .iScrollVerticalScrollbar
+      background: #e0e0e0
+      top: 4px !important
+      bottom: 4px !important
+      right: 4px !important
+    .not-found
+      display none
+  ul
+    list-style: none
+    padding: 0
+    margin: 0
+
+    li.nothing
+      padding: 1em
+      font-size: 1.4em
+      font-family: "Ubuntu"
+      font-weight: 400
+      color: #444
+      display: none
+
+    .item
+      display none
+      position: relative
+      border-top: 0.3em solid #e0e0e0
+      margin-top: -0.3em
+      margin-bottom: 0.3em
+      color: #444444
+      clear both
+      a
+        padding: 1em 0 5.8em
+        display: block
+        text-decoration: none
+        > .title
+          font-size: 1.4em
+          font-family: "Ubuntu"
+          font-weight: 400
+          color: #444
+        &:active
+          background #fff
+          > .title
+            color: #eb5b2f
+          .link
+            color #eb5b2f
+            background-position: bottom right
+      &.visible
+        display block
+    .infrastructure
+      position: absolute
+      left: 0
+      bottom: 1.4em
+      .icon
+        width: 2.6em
+        height: 2.6em
+        border-radius: 1.3em
+        background: #e0e0e0
+        display: inline-block
+        margin-left: 0.4em
+        background-repeat: no-repeat
+        background-position: center
+        &:first-child
+          margin-left: 0
+        &.electricity
+          background-image: url("../images/electricity-icon.png")
+        &.water
+          background-image: url("../images/water-icon.png")
+        &.gas
+          background-image: url("../images/gas-icon.png")
+        &.heating
+          background-image: url("../images/heating-icon.png")
+        &.sewage_plants
+          background-image: url("../images/sewerage-plants-icon.png")
+        &.boiler_system
+          background-image: url("../images/boiler-system-icon.png")
+        &.sewerage
+          background-image: url("../images/sewerage-icon.png")
+
+    .link
+      background-color: #FFF
+      position: absolute
+      bottom: 1.1em
+      right: 0
+      background-image: url("../images/arrow-right.png")
+      background-repeat: no-repeat
+      background-position: top right
+      cursor: pointer
+      font-family: "Helvetica Neue"
+      color: #444
+      padding-right: 15px
+      font-size: 12px
+      font-weight: 400
+
+
+

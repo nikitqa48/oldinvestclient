@@ -1,0 +1,14 @@
+table.card-data
+  tbody
+    - var i = 1
+
+    // use underscore hash instead of native due to the bug in jade source (one with the length field)
+    for k in _(attributes).keys()
+      - v = attributes[k]
+      if !_(v).isBlank() && v != '0'
+        - var rowClass = i%2 == 0 ? "even" : "odd"
+        tr(class=rowClass)
+          td= nameConverter(k)
+          td.value
+            div= valueConverter(v, k)
+        - i++

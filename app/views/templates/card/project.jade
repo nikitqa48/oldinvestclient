@@ -1,0 +1,27 @@
+.card-header
+    table
+        tbody
+            tr
+                td
+                    .title-container
+                        .title= model.get("name")
+                if model.get("common_price") && parseInt(model.get("common_price"))
+                    td.feature
+                        - res = parseMoney(model.get("common_price"), "rub", {factor: 6})
+                        .count=res[0]
+                        .currency
+                            = res[1]
+                            = res[2]
+.card-content
+    .card-scroller
+        unless(_.isEmpty(model.get("pictures")))
+            .gallery-scroller
+                ul.gallery
+                    each picture in model.get("pictures")
+                        - var prefix = config.imageHost || "."
+                        li
+                            a.no-patch(href=prefix + picture.big, rel="gallery")
+                                img(src= prefix + picture.thumb, class="image")
+        .data-block#card-data
+            #card-description-container
+            #card-data-container

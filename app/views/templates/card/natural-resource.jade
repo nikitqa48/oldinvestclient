@@ -1,0 +1,19 @@
+.card-header
+  table
+    tbody
+      tr
+        td
+          .title-container
+            .title= model.get("name")
+.card-content
+  .card-scroller
+    unless(_.isEmpty(model.get("pictures")))
+      .gallery-scroller
+        ul.gallery
+          each picture in model.get("pictures")
+            - prefix = config.imageHost || "."
+            li
+              img(src= prefix + picture.thumb, class="image")
+    .data-block#card-data
+      #card-description-container
+      #card-data-container

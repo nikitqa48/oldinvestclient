@@ -1,0 +1,47 @@
+.card-header
+  table
+    tbody
+      tr
+        td(style="border: 1px solid #red;")
+          .title-container
+            .title= model.get("name")
+.card-content
+  .card-scroller
+    .data-block#card-data
+      #card-description-container
+      #card-data-container
+style.
+  .data-block td{border:1px solid #000;}
+  .data-block table{border-collapse: collapse;}
+  .card-header .title {font-weight: bold;font-size: 18px;margin-bottom: 20px;}
+  #map {height: 180px; width: 650px;margin-top: 20px;}
+#map(data-coords=model.get("coords"))
+link(rel="stylesheet", href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css")
+script(src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js")
+script(src="http://code.jquery.com/jquery-1.10.2.min.js")
+script(src="http://underscorejs.org/underscore-min.js")
+
+script.
+  var map = L.map('map')
+  var coordsData = $("#map").data("coords");
+  map.fitBounds([[52.018698,37.742672],
+  [52.254709,40.796871],[53.585984,39.736691]])
+  L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      tms: false,
+      reuseTiles: true,
+      updateWhenIdle: true,
+      zoomControl: false,
+      attributionControl: false,
+      minZoom: 2,
+      maxZoom: 16
+  }).addTo(map);
+  coords =_(coordsData.split("_")).map(function(part){
+  return _(part.split(",")).map(parseFloat)
+  })
+  L.marker(coords).addTo(map);
+  setTimeout(function(){window.print()},200);
+
+
+
+
+

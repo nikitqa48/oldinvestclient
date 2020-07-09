@@ -1,0 +1,53 @@
+.card-header
+  table
+    tbody
+      tr
+        td
+          .title-container
+            .title= model.get("name")
+        if model.get("area") && parseInt(model.get("area"))
+          td.feature
+            .count= model.get("area")
+            .currency= t("currency.hectare")
+.card-content
+  .card-scroller
+    unless(_.isEmpty(model.get("pictures")))
+      .gallery-scroller
+        ul.gallery
+          each picture in model.get("pictures")
+            - prefix = config.imageHost || "."
+            li
+              a.no-patch(href=prefix + picture.big, rel="gallery")
+                img(src= prefix + picture.thumb, class="image")
+    .infrastucture-block
+      table
+        tbody
+          tr.even
+            td(class=model.get("electricity")?'':'disable')
+              .icon.electricity
+              .title= t("platforms.attributes.electricity")
+            td(class=model.get("gas")?'':'disable')
+              .icon.gas
+              .title= t("platforms.attributes.gas")
+          tr.odd
+            td(class=model.get("heating")?'':'disable')
+              .icon.heating
+              .title= t("platforms.attributes.heating")
+            td(class=model.get("water")?'':'disable')
+              .icon.water
+              .title= t("platforms.attributes.water")
+          tr.even
+            td(class=model.get("sewerage")?'':'disable')
+              .icon.sewerage
+              .title= t("platforms.attributes.sewerage")
+            td(class=model.get("sewage_plants")?'':'disable')
+              .icon.sewage-plants
+              .title= t("platforms.attributes.sewage_plants")
+          tr.odd
+            td(class=model.get("boiler_system")?'':'disable')
+              .icon.boiler-system
+              .title= t("platforms.attributes.boiler_system")
+            td
+    .data-block#card-data
+      #card-description-container
+      #card-data-container

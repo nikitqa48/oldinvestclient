@@ -1,0 +1,84 @@
+@import 'nib'
+
+#designation
+  background: #0585cd
+  position: absolute
+  bottom: 0
+  left: 0
+  right: 0
+  top: 0
+  z-index: 2
+  .slide-panel
+    position: absolute
+    left: 0
+    width: 11em
+    top: 0
+    bottom: 0
+    > .title
+      position: absolute
+      left: 0
+      right: 0
+      top: 1.3em
+      color: #6dc0ef
+      font-size: 1.2em
+      text-transform: uppercase
+      text-align: right
+      line-height: 1.3em
+      padding-right: 1em
+      border-right: 1px solid #46aae0
+  .designation-list
+    cursor pointer
+    right: 0
+    bottom: 0
+    left: 12em
+    top: 1.6em
+    position: absolute
+    overflow: hidden
+    .designation-scroller
+      position: absolute
+    .iScrollHorizontalScrollbar
+      height: 6px !important
+      bottom: 3px !important
+      background-color: #145980
+      
+      .iScrollIndicator
+        background: #5f9fc2 !important
+        border: none !important
+        border-radius: 0 !important
+    ul
+      list-style: none
+      width: 100%
+      padding: 0
+      margin: 0
+      white-space: nowrap
+      li
+        display: inline-block
+        padding-right: 1.5em
+        .icon
+          width: 2.4em
+          height: 2.4em
+          text-align: center
+          border-radius: 1.2em
+          background: #145980
+          display: inline-block
+          background-repeat: no-repeat
+          background-position: center
+          &.project-icon
+            background-image: url("../images/project.svg")
+            background-size: 2.4em
+          &.platform-icon
+            background-image: url("../images/platforms.svg")
+          &.idea-icon
+            background-image: url("../images/idea.svg")
+            background-size: 2.5em
+          &.oil-icon
+            background-image: url("../images/oil-small-icon.png")
+          img
+            max-height: 24px
+        span
+          line-height: 2em
+          font-size: 1.2em
+          vertical-align: top
+          margin-left: 0.3em
+          color: #92bcd3
+

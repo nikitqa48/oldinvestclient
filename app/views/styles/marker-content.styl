@@ -1,0 +1,87 @@
+@import "nib"
+
+.leaflet-popup-content-wrapper
+  font-family: "Ubuntu" !important
+  color: #fff !important
+  background: rgba(25, 27, 31, 0.7) !important
+  border: 0 !important
+  border-radius: 0 !important
+  box-shadow: none !important
+  z-index: 1
+
+  .leaflet-popup-content
+    width: 24em !important
+    margin: 0 !important
+    padding: .5em 0
+
+.leaflet-popup-tip-container
+  z-index: -1
+  left: 50px !important
+  margin-top: 0 !important
+  width: 0px !important
+  height: 0px !important
+  border-style: solid !important
+  border-width: 7px 6.5px 0 6.5px !important
+  border-color: rgba(25, 27, 31, 0.7) transparent transparent transparent !important
+
+  .leaflet-popup-tip
+    margin-top: -4px
+    border: 0 !important
+    box-shadow: none !important
+    background: #444 !important
+
+.marker-content, .natural-resource-marker-content
+  max-height: 20em
+  overflow: hidden
+
+  .marker-content-list
+    clear: both
+
+    .marker-content-list-item-wrapper
+      border-bottom: 1px solid #fff
+
+    .marker-content-list-item-wrapper:last-child
+      border: none
+
+    .marker-content-list-item-wrapper:active
+      background: #ED896A
+
+      .marker-content-list-item-name
+        color: #fff
+
+      .marker-content-list-item-link
+        background-image: url(../images/circle-arrow-right-active.png)
+
+    .marker-content-list-item
+      overflow: hidden
+      position: relative
+      cursor: pointer
+
+      .marker-content-list-item-name
+        float: left
+        color: #fff
+        text-decoration: none
+        padding: 1em 3.5em 1em 1.5em
+
+      .marker-content-list-item-link
+        padding-right: 2em
+        float: right
+        width: 2.2em
+        height: 100%
+        position: absolute
+        right: 0
+        background-image: url(../images/circle-arrow-right-active.png)
+        background-repeat: no-repeat
+        background-position: center
+
+  .iScrollVerticalScrollbar
+    overflow: hidden
+    top: 0 !important
+    bottom: 5px !important
+    left: 1px !important
+
+    .iScrollIndicator
+      border: none !important
+      border-radius: 0 !important
+      background-color: #409cd0 !important
+

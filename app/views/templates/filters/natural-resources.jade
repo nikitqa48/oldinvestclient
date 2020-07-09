@@ -1,0 +1,11 @@
+.natural-resources-container
+  ul.natural-resources
+    - naturalResourcesTypes.each(function(resourceType) {
+      - var prefix = config.imageHost || "."
+      - var title = resourceType.get("name")
+      li(data-value=resourceType.get("code"), title=title)
+        .icon
+          .circle
+            img(src=prefix+resourceType.get("icon"), class="image")
+        .title=_(title).truncate(30)
+    - })

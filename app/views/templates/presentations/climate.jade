@@ -1,0 +1,45 @@
+.scroll-container
+	.layers
+		.layer(data-layer="pressure")
+			.checkbox
+			.title=t("tilelayers.pressure")
+			.legend
+				img(src="images/pressure.png")
+
+		.layer(data-layer="temperature")
+			.checkbox
+			.title=t("tilelayers.temperature")
+			.legend
+				img(src="images/temperature.png")
+
+		//- .layer(data-layer="wind")
+		//- 	.checkbox
+		//- 	.title=t("tilelayers.wind")
+		//- 	.legend
+		//- 		img(src="images/P0.png")
+
+		//- .layer(data-layer="clouds")
+		//- 	.checkbox
+		//- 	.title=t("tilelayers.clouds")
+		//- 	.legend
+		//- 		img(src="images/clouds.png")
+
+		.layer(data-layer="precipitation")
+			.checkbox
+			.title=t("tilelayers.precipitation")
+			.legend
+				img(src="images/precipation.png")
+				.title=t("tilelayers.clouds")
+				img(src="images/clouds.png")
+
+		//- .layer(data-layer="rain")
+		//- 	.checkbox
+		//- 	.title=t("tilelayers.rain")
+		//- 	.legend
+		//- 		img(src="images/precipation.png")
+
+		//- .layer(data-layer="snow")
+		//- 	.checkbox
+		//- 	.title=t("tilelayers.snow")
+		//- 	.legend
+		//- 		img(src="images/P0.png")

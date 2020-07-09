@@ -1,0 +1,146 @@
+@import "nib"
+
+.choice-filter
+  min-height: 5em
+  .filter-title-container
+    position: relative
+ 
+    .filter-title
+      padding-right 2.4em
+      font-size: 14px
+      font-family: "Helvetica Neue"
+      font-weight normal
+
+    .expand-button
+      top: 6px
+      right 15px
+      cursor: pointer
+      overflow: hidden
+      position: absolute
+      width: 23px
+      height: 23px
+      transition: top 0.1s linear
+      border: 1px solid #ed6a42
+      background #ed6a42
+      img      
+        width: 11px
+        position: absolute
+        left: 6px
+        transition: all 0.1s ease
+        &.minus
+          top: 8px
+          height: 7px
+
+  .tooltip
+    font-size 1.3em
+    padding-top 14px
+
+  ul.selected-items
+    li
+      cursor: pointer
+      margin-top: 2em
+      position: relative
+      padding-right: 2.5em
+      span
+        font-size: 1.3em
+      .cancel-button
+        background: url("../images/cancel-button.png") no-repeat
+        margin-left: 0.7em
+        width: 1em
+        height: 1em
+        position: absolute
+        top: 50%
+        right: 0.6em
+        margin-top: -0.5em
+
+  .scroll-container
+    position: absolute
+    left: -14px
+    right: -14px
+    top: 45px
+    max-height: 20em
+    overflow: hidden
+    display: none
+
+    .iScrollVerticalScrollbar
+      top: 1px !important
+      bottom: 1px !important
+      right: 0!important
+      background: #A15A47
+      width: 3px !important
+
+      .iScrollIndicator
+        div
+          background-color: #fff
+
+    
+    ul
+      list-style: none
+      z-index: 3
+      position: relative
+      background-color: #ed6a42
+
+      li
+        padding: 0 25px 0 15px
+        font-weight: 400
+        cursor: pointer
+        position: relative
+        color: #934a36
+        transition: color 0.1s ease
+
+        &:first-child
+          .title
+            border-top: none
+        .tick
+          width: 19px
+          height: 19px
+          float: right
+          border-radius: 12px
+          transition: border-color 0.1s ease
+          background url("../images/plus-orange.png") #ffbeac no-repeat center
+          margin-top: 13px
+        .title
+          font-size: 14px
+          line-height: 22px
+          padding: 11px 0 11px 0
+          border-top: 1px solid rgba(255,255,255,0.1)
+          span
+            line-height: 14px
+            display: inline-block
+            width: 180px
+            word-wrap: break-word
+
+
+        &.selected
+          color: #fff
+          .tick
+            background: url("../images/tick-selected.png") #fff no-repeat center
+
+        &:hover
+          color: #fff
+
+
+  .expand-button
+    top: -0.5em
+    img.plus    
+      height: 0
+      top: 1.3em 
+      
+  .tooltip
+    display: none
+
+  &.virgin.closed
+    .expand-button
+      margin-top: 0
+    .tooltip
+      display: block
+
+  &.closed
+    .expand-button
+      border: 1px solid #979797
+      background-color transparent
+    img.minus
+      display none
+    img.plus
+      height: 11px
+      top: 6px

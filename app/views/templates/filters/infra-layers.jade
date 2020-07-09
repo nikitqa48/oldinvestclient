@@ -1,0 +1,14 @@
+.infrastructural-layers-container
+  ul.infrastructural-layers
+    for layer in _(infraLayers).keys()
+        - var data = _(layer).chain().singularize().capitalize().camelize().value()
+        - var markerName = _(layer).dasherize()
+        - var prefix = config.imageHost || "."
+        - var title = t("infra_layers."+layer)
+        li(data-value=data, title=title)
+          .title=title
+          .icon
+            img(src= prefix + "/images/infralayers/" + markerName +".svg"  , class="image")
+            .arround
+            .inner
+            .stripe

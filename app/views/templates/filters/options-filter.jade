@@ -1,0 +1,11 @@
+.filter-title-container
+  .filter-title=model.get("title")
+.tooltip= model.get("tooltip")
+ul.checkbox-list
+  - items.each(function (item) {
+    - var value = item.value;
+    - var selected = model.isSelected(item.obj) ? "selected" : "";
+    li(class=selected, data-key=item.value)
+      .checkbox
+      .title=item.name
+  - })

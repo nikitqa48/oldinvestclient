@@ -1,0 +1,8 @@
+.about-wrap
+  .scroll-container
+    .title-container
+      .title=t('titles.basic_information')
+    .content
+      != templateData.pageFragments.findWhere({key: "passport"}).get("content")
+  .close-card
+    img(src="../images/close-card.png")

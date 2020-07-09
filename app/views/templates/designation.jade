@@ -1,0 +1,25 @@
+.slide-panel
+    .title
+        =t("titles.designation.part1")
+        br
+        =t("titles.designation.part2")
+.designation-list
+    .designation-scroller
+        ul
+            li
+                .icon.project-icon
+                span= t("designations.invest_projects")
+            li
+                .icon.platform-icon
+                span= t("designations.invest_platforms")
+            li
+              .icon.idea-icon
+              span= t("designations.idea")
+            - items.each(function(item){
+                      li
+                        .icon
+                            img(src=imageUrl(item.get("icon")))
+                        span= item.get("name")
+                  - })
+
+

@@ -1,0 +1,5 @@
+.toogle-button-container
+    ul
+        each layer in layers
+            li.gray-button(data-layer=layer,id=layer)
+                a(href="", data-layer=layer)= t("layers." + layer)

@@ -1,0 +1,40 @@
+#presentation-container
+  .presentation-view
+    &.about
+      position absolute
+      top 71px
+      padding 0
+      transition left 0.3s ease
+      width 533px
+      height 567px
+      overflow visible
+      &.opened
+        left 0
+      .about-wrap
+        .title-container
+          color #fff
+          height 48px
+          padding-left 19px
+          font-size 1.8em
+          line-height 2.5em
+          background #f07c59
+        .close-card
+          background-color rgba(0,0,0,0.5)
+          position absolute
+          top 0
+          right -48px
+          height 4.8em
+          width 4.8em
+          cursor pointer
+          img
+            padding 16px
+        .content
+          padding 19px
+          font-size 1.4em
+          color #444
+        .iScrollVerticalScrollbar
+          // right: 0px !important
+          // width: 3px !important
+          // background: #E0E0E0
+          // top: 42px !important
+          // bottom: 1.8em !important

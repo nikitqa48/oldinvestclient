@@ -1,0 +1,70 @@
+@import 'nib'
+#presentation-container
+  .presentation-view
+    position absolute
+    bottom 65px
+    top 19em
+    left -21.8em
+    width 21.8em
+    z-index 2
+    transition 0.2s right linear
+    &.opened
+      left: 4px
+    .population-count
+      color: #fff
+      font-size: 25px
+      font-weight: bold
+      text-align: center
+      line-height: 44px
+      background: rgba(236,91,47,0.9)
+    ul
+      background: #fff
+      margin-bottom: 2px
+      padding: 21px 10px
+      li
+        font-size: 14px
+        color: #444444
+        height: 16px
+        line-height: 16px
+        display: block
+        margin-top: 12px
+        &:first-child
+          margin-top: 0
+        .counters
+          display: inline-block
+          margin-left: 15px
+          vertical-align: top
+        .color
+          width: 48px
+          height: 16px
+          display: inline-block
+        .color-1
+          background: #e5c637
+        .color-2
+          background: #e7a649
+        .color-3
+          background: #eb8831
+        .color-4
+          background: #e76e2c
+        .color-5
+          background: #c92f23
+        .color-6
+          background: #941616
+
+#presentation-container
+  .presentation-view
+    &.opened
+      top 19em
+      right 0
+      left 4px
+      width 21.8em
+      max-height 100%
+      overflow hidden
+      padding 0 2.9em 0 1.3em
+      border 1px solid #d2d2d2
+      background-color #fff
+
+      .color
+        float left
+      .title
+        margin-left 4em

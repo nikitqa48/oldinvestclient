@@ -1,0 +1,14 @@
+.modal-overlay
+#modal-popup
+    .close-btn
+    .wrap
+        .modal-title
+          = t("messages.mail.send_mail")
+        .modal-description
+          = t("messages.mail.send_mail_description")
+        form.modal-form(action="#{config.adminHost}/mailer", method="GET")
+            input(type="hidden", name="body", value= messageBody)
+            .control-group
+                input(type="text", placeholder=t("participate.email"), class="required email", name="email", id="emailInput")
+            .action
+                button.send-btn.submit(type="submit")= t("messages.mail.submit")

@@ -1,0 +1,56 @@
+@import "nib"
+
+.options-filter
+  min-height: 5em
+  .filter-title-container
+    position: relative
+ 
+    .filter-title
+      padding-right 2.4em
+      font-size: 14px
+      font-family: "Helvetica Neue"
+      font-weight normal
+
+  .tooltip
+    font-size 1.3em
+    padding-top 14px
+
+  ul.checkbox-list
+    li
+      padding 1.5em 0
+      position relative
+      border none
+      cursor pointer
+      border-top 1px solid #ddd
+
+      &:first-child
+        border-top none
+
+      .title
+        font-size 1.4em
+        margin-top 0.2em
+        color #444
+
+      .checkbox
+        border 1px solid #ccc
+        width 16px
+        height 16px
+        float left
+        margin-right 1em
+        position relative
+        overflow hidden
+        -webkit-border-radius 8px
+        border-radius 8px
+
+      &.checked
+        .checkbox
+          border-color #ec8063
+          background url("../images/tick.png") no-repeat center;
+
+      &:active, &:hover
+        .checkbox
+          background url("../images/tick-hover.png") no-repeat center
+        &.checked
+          .checkbox
+            border-color #ec8063
+            background url("../images/tick.png") no-repeat center !important

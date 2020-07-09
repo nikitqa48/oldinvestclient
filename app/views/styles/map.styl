@@ -1,0 +1,64 @@
+@import 'nib'
+
+#map
+  position absolute
+  top 0
+  right 0
+  bottom 0
+  left 0
+  &.leaflet-container
+    background #77AEDD  
+  .leaflet-popup-content-wrapper
+    padding 0
+  .leaflet-bottom .leaflet-control
+    margin-bottom 0
+  .leaflet-bottom
+    bottom: 42px
+  .leaflet-right .leaflet-control
+    margin-right 5px
+  .leaflet-control-zoom
+    border-radius 0
+    border none
+    box-shadow none
+    border: 3px solid rgba(25, 27, 31, 0.7)
+    .leaflet-control-zoom-in
+      border-bottom 1px solid #d8d7d6
+    .leaflet-control-zoom-out
+      border-top none
+  .leaflet-bar a
+    border-radius 0
+    width 25px
+    height 25px
+    text-indent -9999px
+    cursor pointer
+    &.leaflet-control-zoom-out
+      margin-top 0
+    &:active
+     background-color #fff !important
+      
+    &.leaflet-control-zoom-in
+      background url("../images/plus.png") no-repeat center #fff
+    &.leaflet-control-zoom-out
+      background url("../images/minus.png") no-repeat center #fff
+
+    &.leaflet-control-zoom-in:active
+     background url("../images/plus-active.png") no-repeat center #fff
+    &.leaflet-control-zoom-out:active
+     background url("../images/minus-active.png") no-repeat center #fff
+
+  .leaflet-control
+    &.full-size-button
+      width 25px
+      height 25px
+      border: 3px solid rgba(25, 27, 31, 0.7)
+      background url("../images/full-size-button.png") no-repeat center #fff
+      margin-bottom 6px
+      cursor pointer
+      &:active
+       background url("../images/full-size-button-active.png") no-repeat center #fff
+
+.leaflet-marker-icon
+  z-index 50 !important
+
+.leaflet-label
+  z-index 70

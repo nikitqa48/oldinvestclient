@@ -1,0 +1,60 @@
+@import 'nib'
+
+#search
+  .search-panel
+    .search-input
+      input
+        &::-webkit-input-placeholder
+          color:    #898989
+        &:-moz-placeholder
+          color:    #898989
+        &::-moz-placeholder
+          color:    #898989
+        &:-ms-input-placeholder
+          color:    #898989
+
+#search-container
+  position absolute
+  bottom 5px
+  height 47px
+  left 4px
+  background: rgba(25, 27, 31, 0.7)
+  z-index: 1
+  width: 261px
+  #search
+    input
+      margin: 0
+      padding: 0
+      height: 31px
+      border: none
+      background url("../images/search-icon-white.png") #252525 no-repeat 9px center
+      border-radius 2px
+      margin-top 8px
+      margin-left 8px
+      padding-left 32px
+      font-family: "Helvetica Neue"
+      font-weight 400
+      width: 212px
+      transition 0.2s linear width
+      color #fff
+      position relative
+      z-index 2
+    .close-btn
+      display: inline-block
+      color: #FFF
+      cursor: pointer
+      font-size: 12px
+      padding-left: 7px
+      position: absolute
+      top: 18px
+      right: 10px
+      z-index 1
+    &.in-search
+      input
+        width 148px
+      .close-btn
+        display inline-block
+#site
+  &.blur
+    #search-container
+      display none

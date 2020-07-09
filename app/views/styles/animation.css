@@ -1,0 +1,35 @@
+@keyframes blurOut {
+    0% {
+        filter: blur(6px);
+    }
+    100% {
+        filter: blur(0px);
+    }
+}
+
+@-webkit-keyframes blurOut {
+    0% {
+        -webkit-filter: blur(6px);
+    }
+    100% {
+        -webkit-filter: blur(0px);
+    }
+}
+
+@keyframes blurIn {
+    0% {
+        filter: blur(0px);
+    }
+    100% {
+        filter: blur(6px);
+    }
+}
+
+@-webkit-keyframes blurIn {
+    0% {
+        -webkit-filter: blur(0px);
+    }
+    100% {
+        -webkit-filter: blur(6px);
+    }
+}

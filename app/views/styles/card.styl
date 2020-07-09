@@ -1,0 +1,308 @@
+@import 'nib'
+
+#site
+  font-family: "Helvetica Neue"
+  .card
+    transition: left 0.3s ease
+    position: absolute
+    z-index: 4
+    top: 71px
+    width: 533px
+    left: -60.3em
+    bottom: 5px
+    &.opened
+      left: 0
+
+    .close-card
+      background-color: rgba(0, 0, 0, 0.5)
+      position: absolute
+      top: 0
+      right: -48px
+      height: 4.8em
+      width: 4.8em
+      cursor: pointer
+
+      &:active
+        background-color: rgba(0, 0, 0, 0.7)
+
+      img
+        width: 1.6em
+        height: 1.6em
+        position: absolute
+        top: 50%
+        left: 50%
+        margin-left: -0.8em
+        margin-top: -0.8em
+
+    .card-wrap
+      position: absolute
+      bottom: 56px
+      top: 0
+      left: 0
+      right: 0
+      background #fff
+    .card-header
+      background: #f07c59
+      table
+        width: 100%
+        td
+          vertical-align: middle
+          padding: 0.9em 0
+        .actions
+          display: inline-block
+          vertical-align: top
+          padding-left: 1.3em
+          .back
+            width: 2.8em
+            height: 2.8em
+            border: 0.1em solid #50b5ef
+            background: url("../images/arrow-left.png") no-repeat center
+            transition: background-color 0.1s ease
+            cursor: pointer
+            &:active
+              background-color: #51C3F7
+        .title-container
+          display: inline-block
+          padding-left: 19px
+          min-height: 3em
+          >.title
+            color: #fff
+            font-size: 1.8em
+        .feature
+          background: #ca755b
+          color: #fff
+          padding: 0 1em
+          white-space: nowrap
+          text-align: center
+          .count
+            font-size: 3.5em
+            font-weight: 700
+            display: inline-block
+          .currency
+            font-size: 3.5em
+            display: inline-block
+            margin-left: 0.28em
+    .card-content
+      overflow: hidden
+      position: relative
+      height: 30em
+      .card-scroller
+        margin-right: 0.6em
+      .iScrollVerticalScrollbar
+        width: 7px
+        background: #e0e0e0
+        top: 1.2em !important
+        bottom: 1.8em !important
+        right: 0.6em !important
+        .iScrollIndicator
+          border: none !important
+          border-radius: 0 !important
+      .gallery-scroller
+        overflow: hidden
+        height: 75px
+        position: relative
+        margin-left: 19px
+        margin-right: 17px
+        .iScrollHorizontalScrollbar
+          display none
+        .gallery
+          padding-top: 12px
+          white-space: nowrap
+          position: absolute
+          li
+            display: inline-block
+            margin-left: 1.5em
+            &:first-child
+              margin-left: 0
+            img
+              display: block
+    .infrastucture-block
+      padding: 12px 12px 0 19px
+      table
+        width: 100%
+        td
+          width: 50%
+          background: #fff
+          color: #444
+          font-weight: 400
+          font-family: "Helvetica Neue"
+          padding: 0.9em 0
+          border: 0.1em solid #EFEFEF
+          padding-left: 1.2em
+          .icon
+            width: 1.6em
+            height: 1.3em
+            background: no-repeat
+            display: inline-block
+            float: left
+            background-position: center top
+            &.electricity
+              background-image: url("../images/electricity-icon.png")
+            &.gas
+              height: 1.2em
+              background-image: url("../images/gas-icon.png")
+            &.water
+              height: 1.2em
+              background-image: url("../images/water-icon.png")
+            &.sewerage
+              height: 1.4em
+              background-image: url("../images/sewerage-icon.png")
+            &.sewage-plants
+              height: 1.5em
+              background-image: url("../images/sewerage-plants-icon.png")
+            &.heating
+              height: 1.2em
+              background-image: url("../images/heating-icon.png")
+            &.boiler-system
+              height: 1.6em
+              background-image: url("../images/boiler-system-icon.png")
+          .title
+            font-size: 1.4em
+            display: inline-block
+            margin-left: 1.2em
+          &.disable
+            .icon
+              opacity 0.5
+            .title
+              color: #999
+              text-decoration: line-through
+    .data-block
+      padding-top: 1.2em
+      padding-right: 1.6em
+      padding-left 19px
+      .card-navigation
+        padding-bottom 12px
+        .card-btn
+          cursor: pointer
+          height: 3.5em
+          width: 49%
+          border: 1px solid #4eb6f1
+          color: #4eb6f1
+          float: left
+          line-height: 3.5em
+          text-align: center
+          &:hover
+            background-color: #ddf0fa
+          span
+            font-size: 1.4em
+
+      #card-data-container
+        display: none
+      #card-description-container
+        display: block
+        font-size: 1.4em
+        line-height: 1.6em
+        .cardDescription
+          padding-bottom 12px
+          padding-left 0px
+
+      &.no-navigation .card-navigation
+        display: none
+
+      &#card-data
+        #card-data-container
+          display: block
+        #card-data-btn
+          background-color: #4eb6f1
+          color: #fff
+      &#card-description
+        #card-description-container
+          display: block
+        #card-description-btn
+          background-color: #4eb6f1
+          color: #fff
+
+      .data-description
+        padding-left: 1.6em
+        span
+          font-size: 14px
+      table
+        width: 100%
+        tr
+          &.odd
+            td
+              background: #efefef
+          td
+            &:first-child
+              text-align: right
+              color: #999
+            font-size: 1.4em
+            padding: 1em 0 1em 1.2em
+            width: 50%
+            color: #444
+    >.actions
+      background: #444
+      padding: 7px 0
+      text-align: center
+      position: absolute
+      bottom: 0
+      left: 0
+      right: 0    
+
+      .share-button
+        width 2.7em
+        height 2.7em
+        display inline-block
+        font-size 1.4em
+        background #ebebeb
+        color #fff
+        line-height 2.6em
+        cursor pointer
+        border 1px solid #888888
+        transition background-color 0.1s ease
+        &[action="pdf"]
+          background url("../images/pdf.png") no-repeat center
+        &[action="print"]
+          background url("../images/print.png") no-repeat center
+        &[action="vkontakte"]
+          background url("../images/vkontakte.png") no-repeat center
+        &[action="facebook"]
+          background url("../images/facebook.png") no-repeat center
+        &[action="twitter"]
+          background url("../images/twitter.png") no-repeat center
+        &:hover, &:active
+          border 1px solid #a1a1a1
+          background-color: rgba(139, 139, 139, 0.2) !important
+          &[action="pdf"]
+            background url("../images/pdf-active.png") no-repeat center
+          &[action="print"]
+            background url("../images/print-active.png") no-repeat center          
+          &[action="vkontakte"]
+            background url("../images/vkontakte-active.png") no-repeat center
+          &[action="facebook"]
+            background url("../images/facebook-active.png") no-repeat center
+          &[action="twitter"]
+            background url("../images/twitter-active.png") no-repeat center
+
+      .left-group
+        float left
+        .share-button
+          margin-left .5em
+        
+      .right-group
+        float right
+        .share-button
+          margin-right .5em        
+
+      .send-email
+        height 38px
+        margin-right .5em
+        vertical-align top
+        display: inline-block
+        font-size: 1.4em
+        padding: 0 0.6em
+        color: #fff
+        line-height: 38px
+        cursor: pointer
+        transition: background-color 0.1s ease
+        border 1px solid #7f7f7f
+        &:active
+          background-color: #f1623a
+        .icon
+          &.mail
+            width: 1.7em
+            height: 1.4em
+            display: inline-block
+            background: url("../images/mail-icon.png") no-repeat center
+            vertical-align: middle
+            margin-left: 0.6em

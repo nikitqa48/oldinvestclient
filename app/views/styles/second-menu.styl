@@ -1,0 +1,86 @@
+@import "nib"
+
+.second-menu
+  position: absolute
+  top: 100%
+  left: 0
+  margin-top: 1em
+  display: none
+  width: 261px
+  text-align: left
+  text-transform: none
+  font-weight: normal
+
+  &.opened
+    display: block
+
+  .second-menu-item-container
+    opacity: 0
+    transition: all 0.5s ease
+    display: none
+
+    &.visible
+      opacity: 1
+
+    &:first-child
+      .second-menu-item
+        border-top: none
+
+    .second-menu-item
+      background: rgba(255,255,255,0.9)
+      border-top: 1px solid #dadad9
+      transition: background 0.5s linear
+
+      a
+        display: block
+        padding: 1em
+        color: white
+        text-decoration: none
+        position: relative
+        &:active
+          background: rgba(236,91,47,0.9) !important
+          > span
+            color #fff
+
+          > .menu-triangle
+            border-color: rgba(236,91,47,0.9) transparent transparent transparent !important
+            transition: none
+
+        > .menu-triangle
+          border-color: #fff transparent transparent transparent
+          transition: border 0.2s linear, bottom 0.2s linear
+
+        > span
+          font-size: 1.4em
+          font-family: "Helvetica Neue"
+          font-weight 400
+          color #444
+          display block
+          text-align center
+
+      .raker-container
+        position: absolute
+        left: 0
+        right: 0
+        top: 100%
+        margin-top: 1em
+        /*overflow hidden*/
+
+      .raker-container > *
+        transition: all 0.2s linear
+        opacity: 0
+
+      &.opened
+        background: rgba(236,91,47,0.9)
+        border-top: none
+        .raker-container > *
+          opacity: 1
+
+        > a
+          > span
+            color #fff
+
+          > .menu-triangle
+            border-color: rgba(236,91,47,0.9) transparent transparent transparent
+            border-width: 0.6em 0.6em 0 0.6em
+            bottom: -0.6em
